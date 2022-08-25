@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 바깥쪽에 불러오는 경우를 권장/ 99% 외부파일을 불러오는 방식을 사용함  -->
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* 인라인 스타일> 내부 = 외부 */
+        h2{color: orange}
+
+    </style>
+</head>
+<body>
+    <!-- 인라인 스타일 : 태그 안에다 작성한 것 -->
+    <!-- 이렇게 인라인으로 쓴 상황은 권장하지 않음/ 대부분 사용안함 / 안쓰는 것이 기본 -->
+    <h1 style="color:red">인라인 스타일이 가장 우선</h1>
+
+    <h2>내부 스타일</h2>
+    <h3>외부스타일</h3>
+</body>
+</html>
