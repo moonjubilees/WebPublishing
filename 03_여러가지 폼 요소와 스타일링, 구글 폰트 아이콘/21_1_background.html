@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 250px;
+            height: 250px;
+            border: 1px solid black;
+            /* border 1px solid black 하는 기본값 - bd1+tab 하면 됨 */
+
+        }
+
+        div:nth-child(1) {
+            background-color: hotpink;
+        }
+
+        div:nth-child(2) {
+            background-image: url(./images/sprite1.png);
+            background-repeat: no-repeat;
+            /* no-repeat 
+            - repeat-x (가로)
+            - repeat-y (세로)
+            - space : 크기는 줄어들지 않고 간격조절만
+                    
+            */
+        }
+
+        div:nth-child(3) {
+            background-image: url(./images/sprite2.png);
+            background-repeat: no-repeat;
+            background-position: 20px 20px;
+            /* background-position: 50% 50%; */
+            background-position: right bottom;
+        }
+
+        div:nth-child(4) {
+            background-image: url(./images/sprite3.png);
+            background-repeat: no-repeat;
+            background-position: left bottom;
+            background-attachment: fixed;
+            /* 이미지를 뷰포트에 고정 */
+        }
+
+        div:nth-child(5) {
+            background: url(./images/bird.png) no-repeat right bottom;
+            /* 반복여부 */
+        }
+
+        div:nth-child(9) {
+            background: radial-gradient(circle, red, yellow)
+
+        }
+
+        div:nth-child(10) {
+           background: 
+           linear-gradient(-45deg, white 25%, transparent 25%, transparent 75%, black 75%, black)0,0
+           linear-gradient(-45deg, black 25%, transparent 25%, transparent 75%, black 75%, white) 1em, 1em,
+           linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 25%, black 36%)
+            /
+          
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+
+</html>
