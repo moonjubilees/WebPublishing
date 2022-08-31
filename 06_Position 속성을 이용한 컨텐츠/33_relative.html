@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            width: 200px;
+            height: 200px;
+            border: 1px dashed #000;
+        }
+        .box{
+            width: 100%;
+            height: 100%;
+            background: yellow;
+        }
+        .wrapper:nth-child(1)>.box{
+            position: relative;
+            left : 100px;
+            top: 100px;
+            z-index: 1000;
+            /* z-index는 postion이 설정돼있는 애들한테만 된다 */
+            background: yellowgreen;
+        }
+        .wrapper:nth-child(2)>.box{
+            position: relative;
+            left: 50px;
+            bottom: 50px;
+            z-index: 2000;
+            background: skyblue;
+        }
+        .wrapper:nth-child(3)>.box{
+            position: relative;
+            bottom: 200px;
+            left: 150px;
+            z-index: 1500;
+            background: pink;
+        }
+
+
+
+    </style>
+</head>
+<body>
+        <div class="wrapper">
+            <div class="box"></div>
+        </div>
+        <div class="wrapper">
+            <div class="box"></div>
+        </div>
+        <div class="wrapper">
+            <div class="box"></div>
+        </div>
+</body>
+</html>
