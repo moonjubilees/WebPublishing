@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .wrapper {
+            position: relative;
+            display: inline-block;
+            margin:100px;
+            outline: 3px solid blue;
+
+        }
+        .wrapper > a {
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            padding: 20px;
+            background: tomato;
+        }
+        .wrapper:hover > a.dropdown{
+            display: block;
+        }
+        .dropdown{
+            display: none;
+            position: absolute;
+            left: 100px;
+            top: 0;
+        }
+        .dropdown > a {
+            display: block;
+            width: 100px;
+            text-decoration: none;
+            background: #555    ;
+            color: #fff;
+            padding: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <a href="">메인메뉴</a>
+        <div class="dropdown">
+            <a href="">서브메뉴01</a>
+            <a href="">서브메뉴02</a>
+            <a href="">서브메뉴03</a>
+        </div>
+        </div>
+</body>
+</html>
