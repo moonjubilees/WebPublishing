@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            width: 300px;
+            height: 300px;
+        }
+        #box1 {
+            background-color: orange;
+            padding: 50px;
+            border: 10px solid black;
+            margin: 50px;
+            box-sizing: border-box;
+        }
+        #box2 {
+            background-color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus vitae autem iste ipsum a modi laborum architecto beatae obcaecati. Natus quis provident debitis. Quibusdam numquam incidunt rem blanditiis sit quo.</div>
+    <div id="box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ipsum dolore, esse aperiam commodi rem beatae ipsam a tempora eos quis ullam dignissimos earum vitae? Sit itaque magnam sint quas?</div>
+</body>
+</html>
