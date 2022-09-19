@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            width: 100px;
+            height: 100px;
+            background: tomato;
+            margin: 100px;
+
+            /* transition-property: transform;
+            transition-duration: 1s; 이게 꼭 들어가야 한다 안그럼 all
+            transition-timing-function: ease-in;
+            transition-delay: 1s; */
+            /* 1ㅊ 동안 커지기 */
+
+            /* delay는 진짜 잘 안씀 너무 느려 */
+
+            transition: all 2s ease-out 1s;
+        }
+
+        #box:hover {
+            /* width: 200px;
+            height: 200px;  이렇게 쓰지 않는다*/
+            transform: scale(2);
+
+        }
+    
+
+    </style>
+</head>
+
+<body>
+    <div id="box"></div>
+
+
+    </div>
+</body>
+
+</html>
